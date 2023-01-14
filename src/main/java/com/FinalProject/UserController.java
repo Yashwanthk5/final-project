@@ -37,6 +37,6 @@ public class UserController {
 		}
 		
 		System.out.println("User Registeration Failed!!!");
-		return "0";
+		return null;
 	}
 }

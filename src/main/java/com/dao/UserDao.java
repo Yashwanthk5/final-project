@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.model.User;
 
 @Service
-public class UserDao{
+public class UserDao {
 	@Autowired(required=true)	
 	UserRepo userRepo;
 	
@@ -14,6 +14,8 @@ public class UserDao{
 		User user = userRepo.login(emailId, password);
 		return user;
 	}
+	
+
 	
 	public User registerUser(User user) {
 		return userRepo.save(user);

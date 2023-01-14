@@ -13,18 +13,20 @@ public class User {
 	private String number;
 	private String emailId;
 	private String password;
+	private String country;
 	
 	public User() {
 		
 	}
 
-	public User(String name, String gender, String number, String emailId, String password) {
+	public User(String name, String gender, String number, String emailId, String password,String country) {
 		super();
 		this.name = name;
 		this.gender = gender;
 		this.number = number;
 		this.emailId = emailId;
 		this.password = password;
+		this.country = country;
 	}
 
 	public String getName() {
@@ -65,6 +67,14 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
 	}
 	
 	
